@@ -298,8 +298,7 @@
         <div class="section">
             <h2>🌍 国际加密DNS服务</h2>
             <div class="dns-group">
-
-                <!-- Adguard 默认 -->
+                  <!-- Adguard 默认 -->
                 <div class="dns-item">
                     <div class="provider">🛡️ Adguard 默认</div>
                     <div class="tags">
@@ -359,51 +358,36 @@
                     <button class="copy-btn" onclick="copyText('quic://unfiltered.adguard-dns.com')">复制</button>
                 </div>
 
-                <!-- Cloudflare -->
+                <!-- Cloudflare (安全拦截) -->
                 <div class="dns-item">
-                    <div class="provider">☁️ Cloudflare</div>
+                    <div class="provider">☁️ Cloudflare (安全拦截)</div>
                     <div class="tags">
+                        <span class="tag security">恶意软件拦截</span>
                         <span class="tag special">全球任播</span>
-                        <span class="tag security">隐私优先</span>
                     </div>
-<div class="protocol">HTTPS </div>
-                    <code>https://dns.cloudflare.com/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://dns.cloudflare.com/dns-query')">复制</button>
-                    <div class="protocol">HTTPS (IPv4)</div>
-                    <code>https://1.0.0.1/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://1.0.0.1/dns-query')">复制</button>
-<div class="protocol">TLS</div>
-                    <code>tls://one.one.one.one</code>
-                    <button class="copy-btn" onclick="copyText('tls://one.one.one.one')">复制</button>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://security.cloudflare-dns.com/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://security.cloudflare-dns.com/dns-query')">复制</button>
                     <div class="protocol">TLS</div>
-                    <code>tls://1.0.0.1</code>
-                    <button class="copy-btn" onclick="copyText('tls://1.0.0.1')">复制</button>
+                    <code>tls://security.cloudflare-dns.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://security.cloudflare-dns.com')">复制</button>
                 </div>
 
-                <!-- 其他国外DNS服务 -->
+                <!-- Cloudflare (家庭保护) -->
                 <div class="dns-item">
-                    <div class="provider">🛡️ OpenBld</div>
+                    <div class="provider">👨👩👧👦 Cloudflare (家庭保护)</div>
                     <div class="tags">
-                        <span class="tag">快速解析</span>
-                        <span class="tag">无日志</span>
+                        <span class="tag filter">成人内容过滤</span>
+                        <span class="tag security">恶意软件拦截</span>
                     </div>
                     <div class="protocol">HTTPS</div>
-                    <code>https://ada.openbld.net/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://ada.openbld.net/dns-query')">复制</button>
+                    <code>https://family.cloudflare-dns.com/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://family.cloudflare-dns.com/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://family.cloudflare-dns.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://family.cloudflare-dns.com')">复制</button>
                 </div>
-
-                <div class="dns-item">
-                    <div class="provider">🌍 RBN DNS</div>
-                    <div class="tags">
-                        <span class="tag">欧洲节点</span>
-                        <span class="tag security">DNSSEC</span>
-                    </div>
-                    <div class="protocol">HTTPS</div>
-                    <code>https://dns.rbn.gr/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://dns.rbn.gr/dns-query')">复制</button>
-                </div>
-
-                <div class="dns-item">
+    <div class="dns-item">
                     <div class="provider">🚀 Cloudflare ODoH</div>
                     <div class="tags">
                         <span class="tag special">全球网络</span>
@@ -414,43 +398,95 @@
                     <button class="copy-btn" onclick="copyText('https://dooh.cloudflare-dns.com/dns-query')">复制</button>
                 </div>
 
+
+
+
+
+
+
+                <!-- Quad9 (安全拦截) -->
                 <div class="dns-item">
-                    <div class="provider">💨 SB DNS</div>
+                    <div class="provider">🛡️ Quad9 (安全拦截)</div>
                     <div class="tags">
-                        <span class="tag">亚洲优化</span>
-                        <span class="tag security">快速响应</span>
+                        <span class="tag security">DNSSEC验证</span>
+                        <span class="tag filter">安全列表</span>
                     </div>
                     <div class="protocol">HTTPS</div>
-                    <code>https://doh.sb/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://doh.sb/dns-query')">复制</button>
- <div class="protocol">TLS</div>
-                    <code>tls://dot.sb</code>
-                    <button class="copy-btn" onclick="copyText('tls://dot.sb')">复制</button>
+                    <code>https://dns.quad9.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.quad9.net/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.quad9.net</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.quad9.net')">复制</button>
                 </div>
 
+                <!-- Quad9 (EDNS支持) -->
                 <div class="dns-item">
-                    <div class="provider">🔒 Applied Privacy</div>
+                    <div class="provider">🌐 Quad9 (EDNS支持)</div>
                     <div class="tags">
-                        <span class="tag security">隐私保护</span>
-                        <span class="tag">奥地利节点</span>
+                        <span class="tag special">EDNS优化</span>
+                        <span class="tag security">安全拦截</span>
                     </div>
                     <div class="protocol">HTTPS</div>
-                    <code>https://doh.applied-privacy.net/query</code>
-                    <button class="copy-btn" onclick="copyText('https://doh.applied-privacy.net/query')">复制</button>
+                    <code>https://dns11.quad9.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns11.quad9.net/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns11.quad9.net</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns11.quad9.net')">复制</button>
                 </div>
 
+                <!-- Quad9 (无过滤) -->
                 <div class="dns-item">
-                    <div class="provider">⚡ 0ms DNS</div>
+                    <div class="provider">🔓 Quad9 (无过滤)</div>
                     <div class="tags">
-                        <span class="tag">超低延迟</span>
-                        <span class="tag">日本节点</span>
+                        <span class="tag">零过滤</span>
+                        <span class="tag">原始解析</span>
                     </div>
                     <div class="protocol">HTTPS</div>
-                    <code>https://0ms.dev/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://0ms.dev/dns-query')">复制</button>
+                    <code>https://dns10.quad9.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns10.quad9.net/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns10.quad9.net</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns10.quad9.net')">复制</button>
                 </div>
 
+                <!-- Quad101 -->
                 <div class="dns-item">
+                    <div class="provider">🇹🇼 Quad101</div>
+                    <div class="tags">
+                        <span class="tag">台湾节点</span>
+                        <span class="tag security">DNSSEC支持</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.twnic.tw/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.twnic.tw/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://101.101.101.101</code>
+                    <button class="copy-btn" onclick="copyText('tls://101.101.101.101')">复制</button>
+                </div>
+  <div class="dns-item">
+                    <div class="provider">🌍 RBN DNS</div>
+                    <div class="tags">
+                        <span class="tag">欧洲节点</span>
+                        <span class="tag security">DNSSEC</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.rbn.gr/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.rbn.gr/dns-query')">复制</button>
+                </div>
+
+ <div class="dns-item">
+                    <div class="provider">🛡️ OpenBld</div>
+                    <div class="tags">
+                        <span class="tag">快速解析</span>
+                        <span class="tag">无日志</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://ada.openbld.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://ada.openbld.net/dns-query')">复制</button>
+                </div>
+
+
+<div class="dns-item">
                     <div class="provider">🛡️ Dnswarden</div>
                     <div class="tags">
                         <span class="tag">无审查</span>
@@ -464,7 +500,7 @@
                     <button class="copy-btn" onclick="copyText('tls://uncensored.dns.dnswarden.com')">复制</button>
                 </div>
 
-                <div class="dns-item">
+ <div class="dns-item">
                     <div class="provider">📚 Wikimedia</div>
                     <div class="tags">
                         <span class="tag">知识共享</span>
@@ -478,7 +514,488 @@
                     <button class="copy-btn" onclick="copyText('tls://wikimedia-dns.org')">复制</button>
                 </div>
 
+
+
                 <div class="dns-item">
+                    <div class="provider">⚡ 0ms DNS</div>
+                    <div class="tags">
+                        <span class="tag">超低延迟</span>
+                        <span class="tag">日本节点</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://0ms.dev/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://0ms.dev/dns-query')">复制</button>
+                </div>
+
+
+                <!-- SWITCH DNS -->
+                <div class="dns-item">
+                    <div class="provider">🇨🇭 SWITCH DNS</div>
+                    <div class="tags">
+                        <span class="tag">瑞士节点</span>
+                        <span class="tag security">隐私优先</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.switch.ch/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.switch.ch/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.switch.ch</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.switch.ch')">复制</button>
+                </div>
+      <div class="dns-item">
+                    <div class="provider">🔒 Applied Privacy</div>
+                    <div class="tags">
+                        <span class="tag security">隐私保护</span>
+                        <span class="tag">奥地利节点</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://doh.applied-privacy.net/query</code>
+                    <button class="copy-btn" onclick="copyText('https://doh.applied-privacy.net/query')">复制</button>
+                </div>
+                <!-- Rabbit DNS -->
+                <div class="dns-item">
+                    <div class="provider">🐇 Rabbit DNS</div>
+                    <div class="tags">
+                        <span class="tag">多模式选择</span>
+                        <span class="tag filter">家庭过滤</span>
+                    </div>
+                    <div class="protocol">HTTPS (无过滤)</div>
+                    <code>https://dns.rabbitdns.org/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.rabbitdns.org/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (安全)</div>
+                    <code>https://security.rabbitdns.org/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://security.rabbitdns.org/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (家庭)</div>
+                    <code>https://family.rabbitdns.org/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://family.rabbitdns.org/dns-query')">复制</button>
+                </div>
+     <div class="dns-item">
+                    <div class="provider">💨 SB DNS</div>
+                    <div class="tags">
+                        <span class="tag">亚洲优化</span>
+                        <span class="tag security">快速响应</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://doh.sb/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://doh.sb/dns-query')">复制</button>
+ <div class="protocol">TLS</div>
+                    <code>tls://dot.sb</code>
+                    <button class="copy-btn" onclick="copyText('tls://dot.sb')">复制</button>
+                </div>
+                <!-- IIJ.JP DNS -->
+                <div class="dns-item">
+                    <div class="provider">🇯🇵 IIJ.JP DNS</div>
+                    <div class="tags">
+                        <span class="tag">日本节点</span>
+                        <span class="tag security">低延迟</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://public.dns.iij.jp/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://public.dns.iij.jp/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://public.dns.iij.jp</code>
+                    <button class="copy-btn" onclick="copyText('tls://public.dns.iij.jp')">复制</button>
+                </div>
+
+                <!-- Comss.one DNS -->
+                <div class="dns-item">
+                    <div class="provider">🛡️ Comss.one DNS</div>
+                    <div class="tags">
+                        <span class="tag filter">广告拦截</span>
+                        <span class="tag security">网络钓鱼防护</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.controld.com/comss</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.controld.com/comss')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://comss.dns.controld.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://comss.dns.controld.com')">复制</button>
+                    <div class="protocol">QUIC</div>
+                    <code>quic://comss.dns.controld.com</code>
+                    <button class="copy-btn" onclick="copyText('quic://comss.dns.controld.com')">复制</button>
+                </div>
+
+                <!-- ControID 无过滤 -->
+                <div class="dns-item">
+                    <div class="provider">🔓 ControID (无过滤)</div>
+                    <div class="tags">
+                        <span class="tag">零日志</span>
+                        <span class="tag">原始解析</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://freedns.controld.com/p0</code>
+                    <button class="copy-btn" onclick="copyText('https://freedns.controld.com/p0')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://p0.freedns.controld.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://p0.freedns.controld.com')">复制</button>
+                </div>
+
+                <!-- ControID 安全拦截 -->
+                <div class="dns-item">
+                    <div class="provider">🛡️ ControID (安全拦截)</div>
+                    <div class="tags">
+                        <span class="tag security">恶意软件拦截</span>
+                        <span class="tag">快速解析</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://freedns.controld.com/p1</code>
+                    <button class="copy-btn" onclick="copyText('https://freedns.controld.com/p1')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://p1.freedns.controld.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://p1.freedns.controld.com')">复制</button>
+                </div>
+
+                <!-- ControID 广告拦截 -->
+                <div class="dns-item">
+                    <div class="provider">🚫 ControID (广告拦截)</div>
+                    <div class="tags">
+                        <span class="tag filter">广告拦截</span>
+                        <span class="tag security">恶意软件拦截</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://freedns.controld.com/p2</code>
+                    <button class="copy-btn" onclick="copyText('https://freedns.controld.com/p2')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://p2.freedns.controld.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://p2.freedns.controld.com')">复制</button>
+                </div>
+
+                <!-- ControID 社交媒体过滤 -->
+                <div class="dns-item">
+                    <div class="provider">📵 ControID (社交媒体过滤)</div>
+                    <div class="tags">
+                        <span class="tag filter">社交媒体拦截</span>
+                        <span class="tag security">多重防护</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://freedns.controld.com/p3</code>
+                    <button class="copy-btn" onclick="copyText('https://freedns.controld.com/p3')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://p3.freedns.controld.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://p3.freedns.controld.com')">复制</button>
+                </div>
+
+                <!-- CZ.NIC ODVR -->
+                <div class="dns-item">
+                    <div class="provider">🇨🇿 CZ.NIC ODVR</div>
+                    <div class="tags">
+                        <span class="tag security">DNSSEC支持</span>
+                        <span class="tag">捷克节点</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://odvr.nic.cz/doh</code>
+                    <button class="copy-btn" onclick="copyText('https://odvr.nic.cz/doh')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://odvr.nic.cz</code>
+                    <button class="copy-btn" onclick="copyText('tls://odvr.nic.cz')">复制</button>
+                </div>
+
+                <!-- Xstl DNS -->
+                <div class="dns-item">
+                    <div class="provider">🛡️ Xstl DNS</div>
+                    <div class="tags">
+                        <span class="tag filter">广告拦截</span>
+                        <span class="tag security">跟踪防护</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.seia.io/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.seia.io/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (备用)</div>
+                    <code>https://secondary.dns.seia.io/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://secondary.dns.seia.io/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.seia.io</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.seia.io')">复制</button>
+                </div>
+
+                <!-- Digitale Gesellschaft DNS -->
+                <div class="dns-item">
+                    <div class="provider">🇩🇪 Digitale Gesellschaft</div>
+                    <div class="tags">
+                        <span class="tag security">隐私优先</span>
+                        <span class="tag">德国节点</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.digitale-gesellschaft.ch/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.digitale-gesellschaft.ch/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.digitale-gesellschaft.ch</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.digitale-gesellschaft.ch')">复制</button>
+                </div>
+
+                <!-- FutureDNS (德国) -->
+                <div class="dns-item">
+                    <div class="provider">🇩🇪 FutureDNS (德国)</div>
+                    <div class="tags">
+                        <span class="tag">低延迟</span>
+                        <span class="tag special">QUIC支持</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.de.futuredns.eu.org/dns-query/</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.de.futuredns.eu.org/dns-query/')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.de.futuredns.eu.org</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.de.futuredns.eu.org')">复制</button>
+                </div>
+
+  <div class="dns-item">
+                    <div class="provider">🇮🇩 BebasID</div>
+                    <div class="tags">
+                        <span class="tag">印尼节点</span>
+                        <span class="tag">无过滤</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.bebasid.com/unfiltered</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.bebasid.com/unfiltered')">复制</button>
+    <div class="protocol">HTTPS</div>
+                    <code>https://dns.bebasid.com/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.bebasid.com/dns-query')">复制</button>
+                </div>
+<div class="dns-item">
+                    <div class="provider">🔄 RethinkDNS</div>
+                    <div class="tags">
+                        <span class="tag special">自定义过滤</span>
+                        <span class="tag">开源方案</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://basic.rethinkdns.com/</code>
+                    <button class="copy-btn" onclick="copyText('https://basic.rethinkdns.com/')">复制</button>
+    <div class="protocol">TLS</div>
+                    <code>tls://max.rethinkdns.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://max.rethinkdns.com')">复制</button>
+                </div>
+
+
+
+                <!-- FutureDNS (美国) -->
+                <div class="dns-item">
+                    <div class="provider">🇺🇸 FutureDNS (美国)</div>
+                    <div class="tags">
+                        <span class="tag">全球任播</span>
+                        <span class="tag security">无日志</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.us.futuredns.eu.org/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.us.futuredns.eu.org/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.us.futuredns.eu.org</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.us.futuredns.eu.org')">复制</button>
+                </div>
+
+                
+<!-- Sandbox -->
+                <div class="dns-item">
+                    <div class="provider">🔬 Sandbox</div>
+                    <div class="tags">
+                        <span class="tag special">实验性服务</span>
+                        <span class="tag">开发测试</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://doh.sandbox.opendns.com/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://doh.sandbox.opendns.com/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://sandbox.opendns.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://sandbox.opendns.com')">复制</button>
+                </div>
+
+
+
+
+                <!-- Marbled Fennec -->
+                <div class="dns-item">
+                    <div class="provider">🦊 Marbled Fennec</div>
+                    <div class="tags">
+                        <span class="tag">无日志</span>
+                        <span class="tag security">DNSSEC支持</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.marbledfennec.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.marbledfennec.net/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.marbledfennec.net</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.marbledfennec.net')">复制</button>
+                </div>
+
+
+
+                <!-- DNS Forge -->
+                <div class="dns-item">
+                    <div class="provider">🛠️ DNS Forge</div>
+                    <div class="tags">
+                        <span class="tag">德国节点</span>
+                        <span class="tag security">快速解析</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dnsforge.de/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dnsforge.de/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dnsforge.de</code>
+                    <button class="copy-btn" onclick="copyText('tls://dnsforge.de')">复制</button>
+                </div>
+
+                <!-- FFMUC DNS -->
+                <div class="dns-item">
+                    <div class="provider">🇩🇪 FFMUC DNS</div>
+                    <div class="tags">
+                        <span class="tag security">隐私保护</span>
+                        <span class="tag">慕尼黑节点</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://doh.ffmuc.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://doh.ffmuc.net/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dot.ffmuc.net</code>
+                    <button class="copy-btn" onclick="copyText('tls://dot.ffmuc.net')">复制</button>
+                </div>
+
+
+                <!-- Yandex DNS -->
+                <div class="dns-item">
+                    <div class="provider">🇷🇺 Yandex DNS</div>
+                    <div class="tags">
+                        <span class="tag">俄罗斯节点</span>
+                        <span class="tag security">安全模式</span>
+                    </div>
+                    <div class="protocol">HTTPS (标准)</div>
+                    <code>https://common.dot.dns.yandex.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://common.dot.dns.yandex.net/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (安全)</div>
+                    <code>https://safe.dot.dns.yandex.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://safe.dot.dns.yandex.net/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (家庭)</div>
+                    <code>https://family.dot.dns.yandex.net/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://family.dot.dns.yandex.net/dns-query')">复制</button>
+                </div>
+
+
+
+                <!-- momou! DNS -->
+                <div class="dns-item">
+                    <div class="provider">👪 momou! DNS</div>
+                    <div class="tags">
+                        <span class="tag filter">儿童模式</span>
+                        <span class="tag">瑞士节点</span>
+                    </div>
+                    <div class="protocol">HTTPS (标准)</div>
+                    <code>https://dns.momou.ch/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.momou.ch/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (儿童)</div>
+                    <code>https://dns.momou.ch/dns-query/kids</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.momou.ch/dns-query/kids')">复制</button>
+                    <div class="protocol">HTTPS (无过滤)</div>
+                    <code>https://dns.momou.ch/dns-query/unfiltered</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.momou.ch/dns-query/unfiltered')">复制</button>
+                </div>
+
+<!-- LibreDNS -->
+                <div class="dns-item">
+                    <div class="provider">🔓 LibreDNS</div>
+                    <div class="tags">
+                        <span class="tag">无过滤</span>
+                        <span class="tag filter">可选广告拦截</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://doh.libredns.gr/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://doh.libredns.gr/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (广告拦截)</div>
+                    <code>https://doh.libredns.gr/ads</code>
+                    <button class="copy-btn" onclick="copyText('https://doh.libredns.gr/ads')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dot.libredns.gr</code>
+                    <button class="copy-btn" onclick="copyText('tls://dot.libredns.gr')">复制</button>
+                </div>
+
+
+                <!-- OSZX DNS -->
+                <div class="dns-item">
+                    <div class="provider">🛡️ OSZX DNS</div>
+                    <div class="tags">
+                        <span class="tag security">隐私优先</span>
+                        <span class="tag">英国节点</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.oszx.co/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.oszx.co/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.oszx.co</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.oszx.co')">复制</button>
+                </div>
+
+                <!-- Privacy-First DNS -->
+                <div class="dns-item">
+                    <div class="provider">🔒 Privacy-First DNS</div>
+                    <div class="tags">
+                        <span class="tag security">零日志</span>
+                        <span class="tag">新加坡节点</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://doh.tiarap.org/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://doh.tiarap.org/dns-query')">复制</button>
+                </div>
+
+                <!-- BlackMagicc DNS -->
+                <div class="dns-item">
+                    <div class="provider">⚡ BlackMagicc DNS</div>
+                    <div class="tags">
+                        <span class="tag special">QUIC支持</span>
+                        <span class="tag">高速解析</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://rx.techomespace.com/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://rx.techomespace.com/dns-query')">复制</button>
+                    <div class="protocol">QUIC</div>
+                    <code>quic://rx.techomespace.com</code>
+                    <button class="copy-btn" onclick="copyText('quic://rx.techomespace.com')">复制</button>
+                </div>
+
+                <!-- NWPS.fi DNS -->
+                <div class="dns-item">
+                    <div class="provider">🇫🇮 NWPS.fi DNS</div>
+                    <div class="tags">
+                        <span class="tag filter">儿童保护</span>
+                        <span class="tag">芬兰节点</span>
+                    </div>
+                    <div class="protocol">HTTPS (公共)</div>
+                    <code>https://public.ns.nwps.fi/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://public.ns.nwps.fi/dns-query')">复制</button>
+                    <div class="protocol">HTTPS (儿童)</div>
+                    <code>https://kids.ns.nwps.fi/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://kids.ns.nwps.fi/dns-query')">复制</button>
+                </div>
+
+                <!-- JupitrDNS -->
+                <div class="dns-item">
+                    <div class="provider">🪐 JupitrDNS</div>
+                    <div class="tags">
+                        <span class="tag security">恶意软件拦截</span>
+                        <span class="tag">零日志</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://dns.jupitrdns.com/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://dns.jupitrdns.com/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://dns.jupitrdns.com</code>
+                    <button class="copy-btn" onclick="copyText('tls://dns.jupitrdns.com')">复制</button>
+                    <div class="protocol">QUIC</div>
+                    <code>quic://dns.jupitrdns.com</code>
+                    <button class="copy-btn" onclick="copyText('quic://dns.jupitrdns.com')">复制</button>
+                </div>
+
+                <!-- UK DNS Privacy Project -->
+                <div class="dns-item">
+                    <div class="provider">🇬🇧 UK DNS Privacy</div>
+                    <div class="tags">
+                        <span class="tag security">DNSSEC支持</span>
+                        <span class="tag">零日志</span>
+                    </div>
+                    <div class="protocol">HTTPS</div>
+                    <code>https://resolver.dnsprivacy.org.uk/dns-query</code>
+                    <button class="copy-btn" onclick="copyText('https://resolver.dnsprivacy.org.uk/dns-query')">复制</button>
+                    <div class="protocol">TLS</div>
+                    <code>tls://resolver.dnsprivacy.org.uk</code>
+                    <button class="copy-btn" onclick="copyText('tls://resolver.dnsprivacy.org.uk')">复制</button>
+                </div>
+     <div class="dns-item">
                     <div class="provider">🍁 加拿大盾</div>
                     <div class="tags">
                         <span class="tag security">政府认证</span>
@@ -507,33 +1024,8 @@
                     <button class="copy-btn" onclick="copyText('tls://protected.canadianshield.cira.ca')">复制</button>
                 </div>
 
-                <div class="dns-item">
-                    <div class="provider">🇮🇩 BebasID</div>
-                    <div class="tags">
-                        <span class="tag">印尼节点</span>
-                        <span class="tag">无过滤</span>
-                    </div>
-                    <div class="protocol">HTTPS</div>
-                    <code>https://dns.bebasid.com/unfiltered</code>
-                    <button class="copy-btn" onclick="copyText('https://dns.bebasid.com/unfiltered')">复制</button>
-    <div class="protocol">HTTPS</div>
-                    <code>https://dns.bebasid.com/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://dns.bebasid.com/dns-query')">复制</button>
-                </div>
+                
 
-                <div class="dns-item">
-                    <div class="provider">🔄 RethinkDNS</div>
-                    <div class="tags">
-                        <span class="tag special">自定义过滤</span>
-                        <span class="tag">开源方案</span>
-                    </div>
-                    <div class="protocol">HTTPS</div>
-                    <code>https://basic.rethinkdns.com/</code>
-                    <button class="copy-btn" onclick="copyText('https://basic.rethinkdns.com/')">复制</button>
-    <div class="protocol">TLS</div>
-                    <code>tls://max.rethinkdns.com</code>
-                    <button class="copy-btn" onclick="copyText('tls://max.rethinkdns.com')">复制</button>
-                </div>
             </div>
         </div>
     </div>
