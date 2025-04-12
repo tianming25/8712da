@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <link rel="icon" type="image/x-icon" href="./favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta charset="UTF-8">
 <meta name="description" content="全网最全加密DNS服务推荐：国内/国际可用的安全DNS解析地址大全，支持DoH、DoT、QUIC协议，一键复制配置，提升隐私保护与网络安全。">
 <meta name="keywords" content="加密DNS,安全DNS,DoH,DoT,QUIC,DNS推荐,隐私保护,DNS配置,中国国内可用的加密dns">
@@ -505,9 +506,92 @@
 html {
     scroll-behavior: smooth;
 }
+/* 在现有媒体查询中添加以下内容 */
+@media (max-width: 768px) {
+    /* 优势网格调整为单列 */
+    .advantage-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
+    /* 缩小优势卡片内边距 */
+    .advantage-item {
+        padding: 1rem;
+    }
+
+    /* 技术原理流程图改为纵向排列 */
+    .principle-flow {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* 流程步骤宽度自适应 */
+    .flow-step {
+        min-width: auto;
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+
+    /* 协议矩阵单列显示 */
+    .protocol-matrix {
+        grid-template-columns: 1fr;
+    }
+
+    /* 缩小协议卡片内边距 */
+    .matrix-item {
+        padding: 1rem;
+    }
+
+    /* 调整协议头边距 */
+    .proto-header {
+        margin: -1rem -1rem 1rem;
+    }
+
+    /* 技术说明区块缩小内边距 */
+    .tech-principle {
+        padding: 1rem;
+    }
+
+    /* 调整核心优势图标大小 */
+    .value-icon {
+        font-size: 2rem;
+    }
+
+    /* 缩小导航按钮字号 */
+    .nav-btn {
+        font-size: 0.95em;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* 添加以下新样式 */
+@media (max-width: 480px) {
+    /* 更小屏幕的优化 */
+    .advantage-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .security-list li,
+    .protocol-compare li {
+        font-size: 0.9em;
+    }
+
+    .proto-detail p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .flow-icon {
+        font-size: 1.5rem;
+    }
+
+    .flow-step p {
+        font-size: 0.9em;
+    }
+}
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>🔐 加密DNS服务大全</h1>
