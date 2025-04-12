@@ -220,14 +220,405 @@
         border-radius: 0.25rem;
     }
 
+
+/* 技术区块增强样式 */
+.tech-wrapper {
+    display: grid;
+    gap: 2rem;
+}
+
+.neon-border {
+    position: relative;
+    background: var(--card-bg);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.neon-border::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        rgba(99, 102, 241, 0.3) 0%,
+        rgba(79, 70, 229, 0.15) 100%
+    );
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+.value-icon {
+    font-size: 3rem;
+    text-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+}
+
+.comparison {
+    list-style: none;
+    padding: 1rem;
+    background: #1a202c;
+    border-radius: 0.75rem;
+}
+
+.comparison li {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background: linear-gradient(90deg, #2d3748 0%, #1e293b 100%);
+    border-radius: 0.5rem;
+}
+
+.danger { color: #ef4444; }
+.success { color: #10b981; }
+
+/* 协议矩阵样式 */
+.protocol-matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.matrix-item {
+    padding: 1.5rem;
+    background: #1e293b;
+    border-radius: 1rem;
+    transition: transform 0.2s;
+}
+
+.matrix-item:hover {
+    transform: translateY(-5px);
+}
+
+.proto-header {
+    padding: 1rem;
+    margin: -1.5rem -1.5rem 1.5rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.doh-pulse { background: linear-gradient(45deg, #3b82f6 0%, #2563eb 100%); }
+.dot-pulse { background: linear-gradient(45deg, #10b981 0%, #059669 100%); }
+.quic-pulse { background: linear-gradient(45deg, #8b5cf6 0%, #7c3aed 100%); }
+
+.proto-version {
+    display: block;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.latency {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: #475569;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+/* 部署指南样式 */
+.setup-guide {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.guide-step {
+    padding: 1.5rem;
+    background: #1e293b;
+    border-left: 4px solid var(--primary);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.step-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: var(--primary);
+    border-radius: 0.25rem;
+    font-size: 0.85em;
+    margin-bottom: 1rem;
+}
+
+.cyber-link {
+    color: #60a5fa;
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+}
+
+.cyber-link:hover {
+    color: #3b82f6;
+    border-bottom-style: solid;
+}
+
+@media (max-width: 768px) {
+    .protocol-matrix {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* 精准技术样式 */
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.advantage-item {
+    padding: 1.2rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 0.8rem;
+}
+
+.security-list li::before {
+    content: "⚠️";
+    margin-right: 0.5rem;
+    filter: grayscale(1);
+}
+
+.protocol-compare li::before {
+    content: "✅";
+    margin-right: 0.5rem;
+}
+
+.disclaimer {
+    font-size: 0.85em;
+    color: #94a3b8;
+    border-top: 1px dashed #334155;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tech-principle {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #1e293b;
+    border-radius: 1rem;
+}
+
+.principle-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.flow-step {
+    text-align: center;
+    padding: 1rem;
+    background: #2d3748;
+    border-radius: 0.8rem;
+    min-width: 160px;
+}
+
+.flow-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.flow-arrow {
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.proto-detail p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.port {
+    background: #475569;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    font-family: monospace;
+}
+
+/* 导航按钮 */
+.dns-nav {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0 3rem;
+}
+
+.nav-btn {
+    position: relative;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.gradient-cn {
+    background: linear-gradient(135deg, #ff4b4b 0%, #ff7b7b 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 75, 75, 0.3);
+}
+
+.gradient-global {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* 呼吸灯效果 */
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(0.9); }
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .dns-nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .nav-btn {
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🔐 加密DNS服务大全</h1>
 
-        <!-- 国内DNS完整版 -->
+     <!-- 新增导航按钮 -->
+        <div class="dns-nav">
+            <a href="#cn-dns" class="nav-btn gradient-cn">
+                🇨🇳 国内DNS服务
+                <div class="pulse-dot"></div>
+            </a>
+            <a href="#global-dns" class="nav-btn gradient-global">
+                🌍 国际DNS服务
+                <div class="pulse-dot"></div>
+            </a>
+        </div>
+
+  <!-- 精准技术说明区块 -->
         <div class="section">
+            <div class="tech-wrapper">
+                <!-- 核心价值卡片 -->
+                <div class="value-card neon-border">
+                    <div class="value-icon">🔍</div>
+                    <h2>加密DNS的核心优势</h2>
+                    <div class="advantage-grid">
+                        <div class="advantage-item">
+                            <div class="advantage-icon">🛡️</div>
+                            <h3>传输安全</h3>
+                            <p>采用TLS 1.3加密通道，防止：</p>
+                            <ul class="security-list">
+                                <li>ISP监听浏览记录</li>
+                                <li>公共WiFi的DNS劫持</li>
+                                <li>中间人攻击（MITM）</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <div class="advantage-icon">⚡</div>
+                            <h3>协议革新</h3>
+                            <p>相比传统DNS：</p>
+                            <ul class="protocol-compare">
+                                <li>响应速度提升30-50ms</li>
+                                <li>支持EDNS Client Subnet</li>
+                                <li>DNSSEC验证率100%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="disclaimer">
+                        * 注意：日志政策取决于服务商，建议选择通过<em>第三方审计</em>的无日志提供商
+                    </div>
+                </div>
+
+                <!-- 协议矩阵 -->
+                <div class="protocol-matrix">
+                    <div class="matrix-item">
+                        <div class="proto-header doh-pulse">
+                            <h3>DoH</h3>
+                            <span class="proto-version">RFC 8484</span>
+                        </div>
+                        <div class="proto-detail">
+                            <p>✅ 隐藏于HTTPS流量<br>✅ 绕过端口限制<br>⚠️ 可能被HTTP审查识别</p>
+                            <div class="port">端口：443</div>
+                        </div>
+                    </div>
+                    
+                    <div class="matrix-item">
+                        <div class="proto-header dot-pulse">
+                            <h3>DoT</h3>
+                            <span class="proto-version">RFC 7858</span>
+                        </div>
+                        <div class="proto-detail">
+                            <p>✅ 独立加密通道<br>✅ 企业防火墙友好<br>⚠️ 专用端口易被阻断</p>
+                            <div class="port">端口：853</div>
+                        </div>
+                    </div>
+
+                    <div class="matrix-item">
+                        <div class="proto-header quic-pulse">
+                            <h3>DoQ</h3>
+                            <span class="proto-version">RFC 9250</span>
+                        </div>
+                        <div class="proto-detail">
+                            <p>✅ 0-RTT快速连接<br>✅ 抗网络抖动<br>⚠️ 需要HTTP/3支持</p>
+                            <div class="port">端口：784</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 技术原理 -->
+                <div class="tech-principle">
+                    <h2>📡 工作原理图示</h2>
+                    <div class="principle-flow">
+                        <div class="flow-step">
+                            <span class="flow-icon">💻</span>
+                            <p>客户端加密查询<br>（AES-256-GCM）</p>
+                        </div>
+                        <div class="flow-arrow">➔</div>
+                        <div class="flow-step">
+                            <span class="flow-icon">🔑</span>
+                            <p>TLS握手验证<br>（证书链校验）</p>
+                        </div>
+                        <div class="flow-arrow">➔</div>
+                        <div class="flow-step">
+                            <span class="flow-icon">🌐</span>
+                            <p>递归解析<br>（DNSSEC验证）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 国内DNS完整版 -->
+        <div class="section"  id="cn-dns">
             <h2>🇨🇳 国内加密DNS服务</h2>
             <div class="dns-group">
 
@@ -307,7 +698,7 @@
         </div>
 
         <!-- 国外DNS完整版 -->
-        <div class="section">
+        <div class="section"  id="global-dns">
             <h2>🌍 国际加密DNS服务</h2>
             <div class="dns-group">
                   <!-- Adguard 默认 -->
