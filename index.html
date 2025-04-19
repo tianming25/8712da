@@ -826,6 +826,56 @@ html {
                     <button class="copy-btn" onclick="copyText('quic://unfiltered.adguard-dns.com')">复制</button>
                 </div>
 
+
+<!-- 在“国际DNS服务”部分添加以下内容 -->
+
+<!-- Cloudflare IPv4标准 -->
+<div class="dns-item">
+    <div class="provider">☁️ Cloudflare IPv4 标准</div>
+    <div class="tags">
+        <span class="tag special">全球任播</span>
+        <span class="tag">IPv4优化</span>
+    </div>
+    <div class="protocol">HTTPS</div>
+    <code>https://1.0.0.1/dns-query</code>
+    <button class="copy-btn" onclick="copyText('https://1.0.0.1/dns-query')">复制</button>
+    <div class="protocol">TLS</div>
+    <code>tls://1.0.0.1</code>
+    <button class="copy-btn" onclick="copyText('tls://1.0.0.1')">复制</button>
+    <div class="protocol">TLS (域名)</div>
+    <code>tls://1dot1dot1dot1.cloudflare-dns.com</code>
+    <button class="copy-btn" onclick="copyText('tls://1dot1dot1dot1.cloudflare-dns.com')">复制</button>
+</div>
+
+<!-- Cloudflare IPv6版 -->
+<div class="dns-item">
+    <div class="provider">☁️ Cloudflare IPv6</div>
+    <div class="tags">
+        <span class="tag security">稳定性强化</span>
+        <span class="tag">IPv6专属</span>
+    </div>
+ <div class="note">ipv6版本的dns更稳定</div>
+    <div class="protocol">TLS</div>
+    <code>tls://[2606:4700:4700::1111]</code>
+    <button class="copy-btn" onclick="copyText('tls://[2606:4700:4700::1111]')">复制</button>
+    <div class="protocol">TLS</div>
+    <code>tls://[2606:4700:4700::64]</code>
+    <button class="copy-btn" onclick="copyText('tls://[2606:4700:4700::64]')">复制</button>
+<div class="protocol">TLS</div>
+    <code>tls://[2001:4860:4860::8888]</code>
+    <button class="copy-btn" onclick="copyText('tls://[2001:4860:4860::8888]')">复制</button>
+<div class="protocol">TLS</div>
+    <code>tls://[2001:4860:4860::64]</code>
+    <button class="copy-btn" onclick="copyText('tls://[2001:4860:4860::64]')">复制</button>
+
+
+</div>
+
+
+
+
+
+
                 <!-- Cloudflare (安全拦截) -->
                 <div class="dns-item">
                     <div class="provider">☁️ Cloudflare (安全拦截)</div>
