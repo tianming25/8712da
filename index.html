@@ -1647,23 +1647,50 @@ html {
                 </div>
 
 
-                <!-- Yandex DNS -->
-                <div class="dns-item">
-                    <div class="provider">🇷🇺 Yandex DNS</div>
-                    <div class="tags">
-                        <span class="tag">俄罗斯节点</span>
-                        <span class="tag security">安全模式</span>
-                    </div>
-                    <div class="protocol">HTTPS (标准)</div>
-                    <code>https://common.dot.dns.yandex.net/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://common.dot.dns.yandex.net/dns-query')">复制</button>
-                    <div class="protocol">HTTPS (安全)</div>
-                    <code>https://safe.dot.dns.yandex.net/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://safe.dot.dns.yandex.net/dns-query')">复制</button>
-                    <div class="protocol">HTTPS (家庭)</div>
-                    <code>https://family.dot.dns.yandex.net/dns-query</code>
-                    <button class="copy-btn" onclick="copyText('https://family.dot.dns.yandex.net/dns-query')">复制</button>
-                </div>
+                <!-- Yandex DNS 标准版 -->
+<div class="dns-item">
+    <div class="provider">🇷🇺 Yandex DNS (标准)</div>
+    <div class="tags">
+        <span class="tag">俄罗斯节点</span>
+        <span class="tag">无过滤</span>
+    </div>
+    <div class="protocol">HTTPS</div>
+    <code>https://common.dot.dns.yandex.net/dns-query</code>
+    <button class="copy-btn" onclick="copyText('https://common.dot.dns.yandex.net/dns-query')">复制</button>
+    <div class="protocol">TLS</div>
+    <code>tls://common.dot.dns.yandex.net</code>
+    <button class="copy-btn" onclick="copyText('tls://common.dot.dns.yandex.net')">复制</button>
+</div>
+
+<!-- Yandex DNS 安全版 -->
+<div class="dns-item">
+    <div class="provider">🛡️ Yandex DNS (安全)</div>
+    <div class="tags">
+        <span class="tag">俄罗斯节点</span>
+        <span class="tag security">恶意拦截</span>
+    </div>
+    <div class="protocol">HTTPS</div>
+    <code>https://safe.dot.dns.yandex.net/dns-query</code>
+    <button class="copy-btn" onclick="copyText('https://safe.dot.dns.yandex.net/dns-query')">复制</button>
+    <div class="protocol">TLS</div>
+    <code>tls://safe.dot.dns.yandex.net</code>
+    <button class="copy-btn" onclick="copyText('tls://safe.dot.dns.yandex.net')">复制</button>
+</div>
+
+<!-- Yandex DNS 家庭版 -->
+<div class="dns-item">
+    <div class="provider">👪 Yandex DNS (家庭)</div>
+    <div class="tags">
+        <span class="tag">俄罗斯节点</span>
+        <span class="tag filter">内容过滤</span>
+    </div>
+    <div class="protocol">HTTPS</div>
+    <code>https://family.dot.dns.yandex.net/dns-query</code>
+    <button class="copy-btn" onclick="copyText('https://family.dot.dns.yandex.net/dns-query')">复制</button>
+    <div class="protocol">TLS</div>
+    <code>tls://family.dot.dns.yandex.net</code>
+    <button class="copy-btn" onclick="copyText('tls://family.dot.dns.yandex.net')">复制</button>
+</div>
 
 
 
