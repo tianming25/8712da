@@ -544,6 +544,28 @@
 - **协议**: TLS  
   `tls://resolver.dnsprivacy.org.uk`
 
+  ### 🇩🇰 Censurfri DNS
+- **标签**: 零日志, 抗审查, 丹麦节点
+- **协议**: TLS (单播)  
+  `tls://unicast.censurfridns.dk`
+- **协议**: TLS (任播)  
+  `tls://anycast.censurfridns.dk`
+
+### 🔒 CMRG DNS
+- **标签**: 零日志, 隐私优先
+- **协议**: TLS  
+  `tls://dns.cmrg.net`
+
+### 🌐 Neutopia DNS
+- **标签**: 零日志, 无审查
+- **协议**: TLS  
+  `tls://dns.neutopia.org`
+
+### 🇸🇮 GO6Lab PrivacyDNS
+- **标签**: 零日志, 政府级隐私保护
+- **协议**: TLS  
+  `tls://privacydns.go6lab.si`
+
 ### 🍁 加拿大盾 - 私人模式
 - **标签**: 政府认证, 无过滤
 - **协议**: HTTPS  
